@@ -56,15 +56,23 @@ public class Main {
                 if (favQB.equals("y")) {
                     System.out.println("What is their jersey number?");
                     int qbNum = scanner.nextInt();
-                    int magNum = qbNum;
+                    int magNum = qbNum + ranNum;
+                    if (magNum > 75) {
+                        magNum = magNum - 75;
+                    } else {
+                    }
                     System.out.println("Your Lottery Numbers Are: 42 " + lot1 + " " + lot2 + " " + lot3 + " " + lot4 + " Magic Ball:" + magNum);
                 } else {
                     System.out.println("Quarterbacks are dumb anyway.");
-                    int magNum = luckyNum;
+                    int magNum = luckyNum + ranNum;
+                    if (magNum > 75) {
+                        magNum = magNum - 75;
+                    } else {
+                    }
                     System.out.println("Your Lottery Numbers Are: 42 " + lot1 + " " + lot2 + " " + lot3 + " " + lot4 + " Magic Ball:" + magNum);
                 }
             }if (play.equals("n")) {
-                    System.out.println("Game over man. Game freaking over.");
+                    System.out.println("Game over man. Game freaking over. Thanks for playing!");
                     bn = 1;
                 }else {}
         }
